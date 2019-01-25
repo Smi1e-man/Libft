@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seshevch <seshevch@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: seshevch <seshevch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 12:57:23 by seshevch          #+#    #+#             */
-/*   Updated: 2018/10/25 13:23:50 by seshevch         ###   ########.fr       */
+/*   Updated: 2019/01/20 17:01:19 by seshevch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

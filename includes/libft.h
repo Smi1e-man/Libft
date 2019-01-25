@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seshevch <seshevch@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: seshevch <seshevch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/24 13:37:21 by seshevch          #+#    #+#             */
-/*   Updated: 2018/10/30 19:10:14 by seshevch         ###   ########.fr       */
+/*   Updated: 2019/01/25 13:20:09 by seshevch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
+# include "printf.h"
 
 size_t				ft_strlen(const char *s);
 int					ft_strcmp(const char *s1, const char *s2);
@@ -70,11 +72,11 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
-typedef struct		s_list
+typedef struct		s_lst
 {
 	void			*content;
 	size_t			content_size;
-	struct s_list	*next;
+	struct s_lst	*next;
 }					t_list;
 
 t_list				*ft_lstnew(void const *content, size_t content_size);

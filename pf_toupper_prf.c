@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   pf_toupper_prf.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seshevch <seshevch@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: seshevch <seshevch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/10/27 21:08:31 by seshevch          #+#    #+#             */
-/*   Updated: 2018/10/31 13:35:26 by seshevch         ###   ########.fr       */
+/*   Created: 2018/10/27 14:27:42 by seshevch          #+#    #+#             */
+/*   Updated: 2019/01/25 14:15:42 by seshevch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/printf.h"
 
-void	ft_putchar(char c)
+void	pf_toupper_prf(char **s)
 {
-	write(1, &c, 1);
+	int		i;
+
+	i = 0;
+	while (s[0][i] != '\0')
+	{
+		if (s[0][i] >= 97 && s[0][i] <= 122)
+			s[0][i] = s[0][i] - 32;
+		i++;
+	}
 }
